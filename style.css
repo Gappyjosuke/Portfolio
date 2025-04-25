@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+@font-face {
+  font-family: 'JetBrainsMonoNerd';
+  src: url('./fonts/JetBrainsMonoNLNerdFont-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e2e2e2, #303142);
+  font-family: 'JetBrainsMonoNerd', monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'JetBrainsMonoNerd';
+  font-size: 110px;
+  color: #000000;
+  transition: transform 0.3s ease;
+  margin-right: 25px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.input-box {
+  background: #f1f1f1a4;
+  border: 1px solid #ccc;
+  padding: 0.2em 3rem;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-width: 250px;
+  color: #000000;
+  font-family: 'JetBrainsMonoNerd', monospace;
+  font-size: 12px;
+  position: relative;
+}
+
+.input-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #000000;
+  font-size: 15px;
+  width: 100%;
+  font-family: 'JetBrainsMonoNerd', monospace;
+  caret-color: #000000; /* Shows the real typing cursor */
+  position: relative;
+  z-index: 2;
+}
+
+.input-box input::placeholder {
+  color: #44444480; /* faded/ghost placeholder */
+  font-style: italic;
+  opacity: 0.6;
+}
+
+
+

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2e3440;
+  color: #d8dee9;
+  font-family: 'JetBrainsMonoNerd', monospace;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal-wrapper {
+  width: 90%;
+  max-width: 900px;
+  height: 90vh;
+  background-color: #3b4252;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal-output {
+  flex: 1;
+  white-space: pre-wrap;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding-right: 10px;
+}
+
+.terminal-output::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+  color: #a3be8c;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+#prompt {
+  color: #8fbcbb;
+  margin-right: 5px;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: #88c0d0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1em;
+  outline: none;
+  width: 100%;
+}
+
+.previous-command {
+  color: #81a1c1;
+  font-weight: bold;
+}
+
+.terminal-text {
+  margin: 8px 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+.terminal-text ul {
+  margin: 6px 0;
+  padding-left: 20px;
+  list-style-type: square;
+}
+.terminal-text p,
+.terminal-text li,
+.terminal-text h3 {
+  margin: 4px 0;
+}
+
+.input-line {
+  margin-top: 10px;
+}
+
+/* ✅ Animation for smooth fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+.terminal-block {
+  padding: 8px 12px;
+  margin: 8px 0;
+}
