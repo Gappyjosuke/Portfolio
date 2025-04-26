@@ -87,10 +87,8 @@ function handleCommand(cmd) {
       learning      my learning paths<br> 
       about         about Sastha Ruban<br>
       clear         clear the terminal<br>
-      education     my education background<br>
-      gui           go to my portfolio in GUI<br>
+      education     my education <br>
       help          check available commands<br>
-      history       view command history<br>
       projects      view projects that I've coded<br>
       contact       check out my social accounts<br>`, true),
 
